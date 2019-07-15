@@ -296,7 +296,7 @@ footer.cta{
 		object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     header{
         flex-direction: column;
     }
@@ -324,7 +324,7 @@ footer.cta{
 
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 500px){
     .container{
         width: 100%;
     }
