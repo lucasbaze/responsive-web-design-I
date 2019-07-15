@@ -1,3 +1,509 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
 
 
+
+/* Your code starts here! */
+h1, h2, h3, h4, h5, h6{
+	font-family: "Bangers", "Titillium";
+}
+
+h1{
+	font-size: 70px;
+}
+
+h3{
+	font-size: 30px;
+}
+
+h4{
+	font-size: 18px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul{
+	display: flex;
+}
+
+section {
+	display: flex;
+	padding: 10px 0px 10px 0px;
+	margin: 45px 0px 45px 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+	background-color: blue;
+	padding-top: 30px;
+	padding-bottom: 35px;
+}
+
+nav{
+	margin-top: 10px;
+}
+
+button{
+	border: 1px solid black;
+	border-radius: 0px;
+	font-size: 16px;
+	padding: 7px 30px;
+}
+
+p{
+	font-size: 18px;
+	font-weight: 100;
+}
+
+footer{
+	display: flex;
+}
+
+.f-column{
+	flex-direction: column;
+}
+
+address{
+	margin-bottom: 20px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.col{
+	flex-direction: column;
+}
+
+ul.list-circles{
+	padding-top: 30px;
+}
+
+.list-circles{
+	list-style: disc inside;
+}
+
+ul.list-circles li{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.nav-item{
+	color: white;
+	text-decoration: none;
+	margin: 0px 20px 0 20px;
+}
+
+.nav-item:hover{
+	border-bottom: 1px solid white;
+}
+
+.d-center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	float: right;
+	margin-right: 5%;
+}
+
+.tagline{
+	text-align: center;
+}
+
+.jumbotron{
+	padding: 30px 0px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.jumbotron2{
+	margin-top: 100px;
+}
+
+.jumbotron2 img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.border-bottom{
+	border-bottom: 1px solid black;
+	margin-bottom: 0px;
+	padding-bottom: 40px;
+}
+
+.ff-r-w{
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: space-between;
+}
+
+.f-row{
+	flex-direction: row;
+}
+
+.service-block{
+	background-color: #ffffff;
+	border: 1px solid #fff;
+	box-shadow: 0px 0px 15px 2px #dddddd;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	padding: 20px;
+	width: 43%;
+	transition: width 1s;
+}
+
+.pushUpDown{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 1.2em;
+}
+
+.pushRight{
+	padding-right: 40px;
+}
+
+.cta{
+	justify-content: center;
+	align-items: center;
+}
+
+footer.cta{
+	margin-bottom: 50px;
+}
+
+.cta-button:hover{
+		cursor: pointer;
+		animation: wobble-hor-bottom 0.8s both;
+}
+
+.circle{
+	width: 350px;
+	height: 350px;
+	margin: 0 auto;
+	background-image: url("../img/header-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.square{
+	width: 876px;
+	height: 182px;
+	background-image: url("../img/mid-page-accent.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.center{
+	align-self: center;
+}
+
+.col-6{
+	width: 49%;
+}
+
+.j-s-b{
+	justify-content: space-between;
+}
+
+.col-4{
+	width: 32%;
+}
+
+.contact-info{
+	margin-bottom: 30px;
+}
+
+.services-info-img{
+		object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+    header{
+        flex-direction: column;
+    }
+
+    header > nav{
+        order: 1;
+        align-items: stretch;
+    }
+
+    ul.nav{
+        justify-content: space-between;
+    }
+
+    header > a{
+        align-self: center;
+    }
+
+    header > a{
+        padding: 0 0 20px 0;
+    }
+
+    .jumbotron > div:nth-child(2){
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        width: 100%;
+    }
+
+    section{
+        margin: 20px 15px;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav > ul > li{
+        padding: 15px 0;
+        border-top: 1px solid black;
+    }
+
+    nav > ul > li:last-child{
+        border-bottom: 1px solid black;
+    }
+
+    section.j-s-b{
+        flex-direction: column;
+    }
+
+    .col-6{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .col-4{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-7-9 15:44:11
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation color-change-2x
+ * ----------------------------------------
+ */
+
+ .color-change-2x {
+ 	-webkit-animation: color-change-2x 8s linear infinite alternate both;
+ 	        animation: color-change-2x 8s linear infinite alternate both;
+ }
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-7-9 15:48:6
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+
+ .rotate-center {
+ 	-webkit-animation: rotate-center 0.6s ease-in-out both;
+ 	        animation: rotate-center 0.6s ease-in-out both;
+ }
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-7-9 16:31:2
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation wobble-hor-bottom
+ * ----------------------------------------
+ */
+
+ .wobble-hor-bottom {
+	-webkit-animation: wobble-hor-bottom 0.8s both;
+	        animation: wobble-hor-bottom 0.8s both;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
